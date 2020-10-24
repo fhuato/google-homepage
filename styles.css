@@ -1,29 +1,13 @@
 /* CSS Style Sheet */
 
 /* CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
 }
-
 /* Navigation Bar */
-
 li {
     list-style-type: none;
     font-family: arial, sans-serif;
@@ -36,10 +20,16 @@ li {
 .left {
     float: left;
 }
+.left:hover {
+    text-decoration: underline;
+}
 .right {
     float: right;
     margin-right: 5px;
     margin-left: -10px;
+}
+.right:hover {
+    text-decoration: underline;
 }
 .button {
     background-color: #4285f4;
@@ -56,26 +46,33 @@ li {
     width: 65px;
 }
 
-/* Google Logo and Search Bar */
+/* Google Logo, Search Bar & Buttons */
 
 .logo {
     display: block;
+    margin: auto;
     margin-left: auto;
     margin-right: auto;
     padding-top:  140px;
+    padding-left: 80px;
+    height: 85px;
+    width: 264px;
 }
 .bar {
+    display: block;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     min-width: 450px;
     border: 1px solid #e6e6e6;
     height: 20px; 
     border-radius: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
     padding: 10px 15px;
     margin-top: 25px;
+    font-size: 16px;
+    
 }
+
 .bar:hover {
     border: 1.5px solid #E0DEDE;
     box-shadow: 1px 1px 1px #E0DEDE;
@@ -83,4 +80,72 @@ li {
 .bar:active {
     border: 1.5px solid #E0DEDE;
     box-shadow: 1px 1px 1px #E0DEDE;
+    border-color: #E0DEDE
 }
+
+.l-button {
+    display: flex; 
+    position: relative;
+    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #F2F2F2;
+    color: #5F6368;
+    border: none;
+    border-radius: 4px;
+    line-height: 35px;
+    font-size: 14px;
+    right: 88px;
+    top: 25px;
+    padding: 0px 16px;
+   
+
+}
+.r-button {
+    display: flex; 
+    position: relative;
+    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #F2F2F2;
+    color: #5F6368;
+    border: none;
+    border-radius: 4px;
+    line-height: 35px;
+    font-size: 14px;
+    left: 58px;
+    padding: 0px 16px;
+    bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #f2f2f2;
+    color: #5f6368;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-self: center;
+    font-size: 14px;
+    padding-bottom: 10px;
+    border-top: 1px solid #e4e4e4;
+    line-height: 1px;
+}
+
+.b-left {
+    float: left;
+}
+
+.b-left:hover {
+    text-decoration: underline;
+}
+
+.b-right {
+    float: right; 
+}
+
+.b-right:hover {
+    text-decoration: underline;
+}
+
